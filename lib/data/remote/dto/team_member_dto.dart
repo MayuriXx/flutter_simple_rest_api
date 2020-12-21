@@ -1,5 +1,7 @@
 import 'package:flutter_simple_rest_api/data/remote/dto/skill_dto.dart';
 
+enum Role {TECH_LEAD,DEV,PO,UX,SCRUM}
+
 class TeamMemberDto {
   String id;
   String name;

@@ -7,7 +7,7 @@ class SimpleClient {
   static ChopperClient instance() {
     if (singleton == null) {
       singleton = ChopperClient(
-        baseUrl: GlobalConfiguration().get("http://localhost:8080/api"),
+        baseUrl: "http://10.0.2.2:8080",
         interceptors: [
           (Request request) async {
             //var key = GlobalConfiguration().get("http://localhost:8080/api");

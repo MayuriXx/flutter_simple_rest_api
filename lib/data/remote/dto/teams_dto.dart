@@ -1,5 +1,4 @@
 import 'package:flutter_simple_rest_api/data/remote/dto/team_dto.dart';
-import 'dart:convert';
 
 class TeamsDto {
   List<TeamDto> teamsDto;

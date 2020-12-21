@@ -1,3 +1,4 @@
+import 'package:flutter_simple_rest_api/data/remote/dto/team_dto.dart';
 import 'package:flutter_simple_rest_api/data/remote/dto/teams_dto.dart';
 import 'package:flutter_simple_rest_api/model/mTeam.dart';
 

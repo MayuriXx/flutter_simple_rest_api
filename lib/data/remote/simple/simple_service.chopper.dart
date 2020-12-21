@@ -16,7 +16,8 @@ class _$SimpleService extends SimpleService {
 
   Future<Response> getAllTeams() {
     final $url = '/team-api/teams/';
-    final $request = Request('GET', $url, client.baseUrl);
+    final $headers = {'Content-type': 'application/json'};
+    final $request = Request('GET', $url, client.baseUrl, headers: $headers);
     return client.send<dynamic, dynamic>($request);
   }
 }
