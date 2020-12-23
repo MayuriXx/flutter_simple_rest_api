@@ -6,7 +6,7 @@ class mTeamMember {
   String name;
   String firstName;
   int age;
-  List<String> role;
+  String role;
   List<mSkill> skills;
 
   mTeamMember(

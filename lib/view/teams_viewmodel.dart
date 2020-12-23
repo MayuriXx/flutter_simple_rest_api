@@ -8,7 +8,7 @@ import 'package:provider/provider.dart';
 
 class TeamsViewModel extends ViewModel {
   BuildContext _context;
-  List<mTeams> teams = [];
+  mTeams teams;
   void load(BuildContext context, List args) async {
     _context = context;
     setLifecycle(OnLoad());

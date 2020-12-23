@@ -7,7 +7,7 @@ class TeamMemberDto {
   String name;
   String firstName;
   int age;
-  List<String> role = ["TECH_LEAD", "DEV", "PO", "UX", "SCRUM"];
+  String role;
   List<SkillDto> skillsDto;
 
   TeamMemberDto(
@@ -26,7 +26,7 @@ class TeamMemberDto {
     role = json["role"];
     if (json["skills"] != null) {
       skillsDto = new List<SkillDto>();
-      json["teams"].forEach((v) {
+      json["skills"].forEach((v) {
         skillsDto.add(SkillDto.fromJson(v));
       });
     }

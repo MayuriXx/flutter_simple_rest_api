@@ -10,7 +10,7 @@ part 'simple_repository.impl.dart';
 
 abstract class SimpleRepository extends Repository {
 
-  Future<List<mTeams>> getAllTeams();
+  Future<mTeams> getAllTeams();
 
   static SimpleRepository create() => _$SimpleRepository();
 }

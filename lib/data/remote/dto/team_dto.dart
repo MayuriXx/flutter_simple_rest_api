@@ -12,7 +12,7 @@ class TeamDto {
     name = json["name"];
     if (json["members"] != null) {
       teamMembersDto = new List<TeamMemberDto>();
-      json["teams"].forEach((v) {
+      json["members"].forEach((v) {
         teamMembersDto.add(TeamMemberDto.fromJson(v));
       });
     }
